@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="graphit:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/graphit_jar</output-path>
+    <root id="archive" name="graphit.jar">
+      <element id="module-output" name="graphit" />
+    </root>
+  </artifact>
+</component>

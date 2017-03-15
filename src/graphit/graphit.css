@@ -1,0 +1,218 @@
+#root {
+    -fx-background-color: #333333;
+    -fx-padding: 1px;
+}
+
+#windowClose {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/close.png");  
+}
+#windowClose:hover {
+    -fx-effect: dropshadow(gaussian, white, 10, 0.5, 1.0, 1.0);
+}
+#windowClose:armed {
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 2.0, 2.0);
+}
+#windowExpand {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/expand.png");    
+}
+#windowExpand:hover {
+    -fx-effect: dropshadow(gaussian, white, 10, 0.5, 1.0, 1.0);
+}
+#windowExpand:armed {
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 2.0, 2.0);
+}
+
+#windowMin {
+    -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/winMin.png"); 
+}
+#windowMin:hover {
+    -fx-effect: dropshadow(gaussian, white, 10, 0.5, 1.0, 1.0);
+}
+#titleBoarder {
+    -fx-background-color: radial-gradient(center 50% -45%, radius 200%, #0567b2 45%, #045999 50%);
+}
+#menuBoarderButton {
+    -fx-background-color: null;
+}
+#menuBoarderButton:hover{
+    -fx-effect: dropshadow(gaussian, white, 10, 0.5, 1.0, 1.0);
+}
+#menuBoarderButton:armed {
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 2.0, 2.0);
+}
+#menuToolBar{
+    -fx-background-color:  linear-gradient(#0567b2 85%   , #0b91f8); 
+}
+.mainBackground {   
+    -fx-background-image: url("images/shattered.png");
+}
+.AlgBackground {   
+    -fx-background-image: url("images/p5.png");
+}
+.menuButton {
+    
+    -fx-background-radius: 0px 90px 90px 0px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, #808080, 10, 0.5, 2.0, 1.0);
+    
+}
+.menuButton:hover {
+    -fx-translate-x: 20;
+}
+.menuButton:armed {
+    -fx-effect: dropshadow(gaussian, white, 10, 0.5, 3.0, 3.0);
+}
+.testButton {
+    -fx-background-radius: 0px 90px 90px 0px; 
+    -fx-background-color: 
+        white,
+        radial-gradient(center 60%-50%, radius 100%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 2.0, 2.0);  
+}
+.circle 
+{
+        -fx-fill:  #eaeaea;	
+}
+.circleButton 
+{  
+    -fx-background-color:  linear-gradient(#f6f6f6, #eaeaea);
+    -fx-background-radius: 140px;
+    -fx-effect: dropshadow( three-pass-box , rgba(0, 0, 0, .25) , 4, 0.2 , 0 , 1 );       
+}
+.circleButton:hover 
+{
+    -fx-background-color:  linear-gradient(white, #eaeaea);
+}
+.circleButton:armed
+{
+     -fx-effect: innershadow(one-pass-box, #9f9f9f, 10, 0.5, 0, 3);
+}
+.line
+{
+    -fx-stroke-width: 7;
+    -fx-stroke: #eaeaea;
+}
+.circleButtonFirst
+{
+     -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/first_32.png");
+    -fx-effect: dropshadow( three-pass-box , gray , 4, 0.2 , 0 , 1 );
+}
+.circleButtonFirst:hover
+{
+-fx-effect: dropshadow(gaussian, gray, 2, 0.2, 0.2, 1.0);
+}
+.circleButtonFirst:armed
+{
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 1.0, 1.0);
+}
+
+.circleButtonLast
+{
+     -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/last_32.png");
+    -fx-effect: dropshadow( three-pass-box , gray , 4, 0.2 , 0 , 1 );
+}
+.circleButtonLast:hover
+{
+-fx-effect: dropshadow(gaussian, gray, 2, 0.2, 0.2, 1.0);
+}
+.circleButtonLast:armed
+{
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 1.0, 1.0);
+}
+.circleButtonNext
+{
+     -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/next.png");
+    -fx-effect: dropshadow( three-pass-box , gray , 4, 0.2 , 0 , 1 );
+}
+.circleButtonNext:hover
+{
+-fx-effect: dropshadow(gaussian, gray, 2, 0.2, 0.2, 1.0);
+}
+.circleButtonNext:armed
+{
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 1.0, 1.0);
+}
+
+.circleButtonPrev
+{
+     -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/prev.png");
+    -fx-effect: dropshadow( three-pass-box , gray , 4, 0.2 , 0 , 1 );
+}
+.circleButtonPrev:hover
+{
+-fx-effect: dropshadow(gaussian, gray, 2, 0.2, 0.2, 1.0);
+}
+.circleButtonPrev:armed
+{
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 1.0, 1.0);
+}
+
+.circleButtonRepeat
+{
+     -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/repeat.png");
+    -fx-effect: dropshadow( three-pass-box , gray , 4, 0.2 , 0 , 1 );
+}
+.circleButtonRepeat:hover
+{
+-fx-effect: dropshadow(gaussian, gray, 2, 0.2, 0.2, 1.0);
+}
+.circleButtonRepeat:armed
+{
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 1.0, 1.0);
+}
+
+.circleButtonMenuBack
+{
+     -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/back.png");
+    -fx-effect: dropshadow( three-pass-box , gray , 4, 0.2 , 0 , 1 );
+}
+.circleButtonMenuBack:hover
+{
+-fx-effect: dropshadow(gaussian, gray, 2, 0.2, 0.2, 1.0);
+}
+.circleButtonMenuBack:armed
+{
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 1.0, 1.0);
+}
+
+
+.ButtonMenuBack
+{
+     -fx-font-size: 1px;
+    -fx-background-color: null;
+    -fx-background-image: url("images/left.png");
+    -fx-effect: dropshadow( three-pass-box , gray , 4, 0.2 , 0 , 1 );
+}
+.ButtonMenuBack:hover
+{
+-fx-effect: dropshadow(gaussian, gray, 2, 0.2, 0.2, 1.0);
+}
+.ButtonMenuBack:armed
+{
+    -fx-effect: innershadow(gaussian, #808080, 5, 0.1, 1.0, 1.0);
+}
+
+#labelGraphit
+{
+
+
+}
+

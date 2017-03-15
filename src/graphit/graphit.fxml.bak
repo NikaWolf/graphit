@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="graphit.GraphitController">
+  <children>
+    <VBox prefHeight="600.0" prefWidth="800.0" style="&#10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <AnchorPane fx:id="titleBoarder" prefHeight="30.0" prefWidth="200.0">
+          <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="400.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="-1.0">
+              <children>
+                <Label fx:id="labelGraphit" text="GraphIt" textFill="WHITE">
+                  <font>
+                    <Font name="Lao UI" size="20.0" />
+                  </font>
+                  <HBox.margin>
+                    <Insets />
+                  </HBox.margin>
+                </Label>
+              </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="390.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Button fx:id="windowMin" mnemonicParsing="false" onAction="#minWindow" prefHeight="16.0" prefWidth="16.0" text="" />
+                <Button fx:id="windowExpand" mnemonicParsing="false" onAction="#maxWindow" prefHeight="16.0" prefWidth="16.0" text="" />
+                <Button fx:id="windowClose" mnemonicParsing="false" onAction="#exit" prefHeight="16.0" prefWidth="16.0" text="" />
+              </children>
+            </HBox>
+          </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="40.0" prefWidth="200.0">
+          <children>
+            <ToolBar fx:id="menuToolBar" prefHeight="40.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <Button fx:id="menuBoarderButton" disable="false" mnemonicParsing="false" onAction="#WelcomeHideMenuShow" text="МЕНЮ" textFill="WHITE">
+                  <font>
+                    <Font name="Microsoft Sans Serif" size="15.0" />
+                  </font>
+                </Button>
+                <Separator orientation="VERTICAL" prefHeight="30.0" />
+                <Button fx:id="menuBackButton" disable="true" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" styleClass="ButtonMenuBack" text="" visible="true" />
+              </items>
+            </ToolBar>
+          </children>
+        </AnchorPane>
+        <AnchorPane fx:id="mainBackground" prefHeight="530.0" prefWidth="200.0" styleClass="mainBackground" visible="true" VBox.vgrow="ALWAYS">
+          <children>
+            <HBox id="HBox" alignment="CENTER" opacity="1.0" prefWidth="800.0" spacing="5.0" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <AnchorPane fx:id="WelcomePane" prefHeight="530.0" prefWidth="805.0" visible="true">
+                  <children>
+                    <VBox alignment="TOP_CENTER" prefHeight="530.0" prefWidth="805.0" spacing="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                          <font>
+                            <Font size="20.0" fx:id="x2" />
+                          </font>
+                        </Text>
+                        <Text fill="#001899" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME" underline="false">
+                          <font>
+                            <Font size="50.0" fx:id="x1" />
+                          </font>
+                        </Text>
+                        <Text fill="#001066" strokeType="OUTSIDE" strokeWidth="0.0" text="TO">
+                          <font>
+                            <Font size="30.0" />
+                          </font>
+                        </Text>
+                        <Text stroke="RED" strokeType="OUTSIDE" strokeWidth="2.4" style="-fx-fill: null;" text="GraphIt">
+                          <font>
+                            <Font size="80.0" />
+                          </font>
+                        </Text>
+                        <Text font="$x2" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Демонстрация алгоритмов решения графовых задач." textAlignment="CENTER">
+                          <font>
+                            <Font size="12.0" />
+                          </font>
+                        </Text>
+                      </children>
+                      <padding>
+                        <Insets top="40.0" />
+                      </padding>
+                    </VBox>
+                  </children>
+                </AnchorPane>
+              </children>
+            </HBox>
+            <HBox id="HBox" alignment="CENTER" prefWidth="803.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <AnchorPane fx:id="paneForDrawing" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="800.0" visible="true" />
+              </children>
+            </HBox>
+            <AnchorPane fx:id="TheoryPane" disable="false" prefHeight="530.0" prefWidth="800.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <HBox prefHeight="530.0" prefWidth="800.0" spacing="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <AnchorPane disable="false" prefHeight="530.0" prefWidth="414.0">
+                      <children>
+                        <TextArea prefHeight="530.0" prefWidth="384.0" text="" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                      </children>
+                    </AnchorPane>
+                    <TabPane disable="false" prefHeight="530.0" prefWidth="386.0" tabClosingPolicy="UNAVAILABLE" visible="true">
+                      <tabs>
+                        <Tab text="ПсевдоКод">
+                          <content>
+                            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="499.0" prefWidth="386.0">
+                              <children>
+                                <HBox id="HBox" alignment="CENTER" prefHeight="499.0" prefWidth="386.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              </children>
+                            </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="Изображение 1">
+                          <content>
+                            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                      </tabs>
+                    </TabPane>
+                  </children>
+                </HBox>
+              </children>
+            </AnchorPane>
+            <AnchorPane fx:id="menuAhchorPane" prefHeight="530.0" prefWidth="200.0" visible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <VBox id="" fx:id="menuVBox" prefHeight="530.0" prefWidth="300.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+              </children>
+              <padding>
+                <Insets left="-20.0" />
+              </padding>
+            </AnchorPane>
+          </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+    <AnchorPane fx:id="controlPane" prefHeight="100.0" prefWidth="800.0" visible="true" AnchorPane.bottomAnchor="-100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0" spacing="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <Button fx:id="backButton" disable="true" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" styleClass="circleButtonMenuBack" text="" visible="false" />
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="220.0">
+              <children>
+                <Rectangle arcHeight="200.0" arcWidth="100.0" fill="#eeeeee" height="80.0" layoutX="0.0" layoutY="10.0" smooth="true" stroke="#00168a" strokeLineCap="SQUARE" strokeLineJoin="MITER" strokeMiterLimit="10.0" strokeType="INSIDE" strokeWidth="2.1" width="220.0" x="0.0" y="0.0">
+                  <effect>
+                    <InnerShadow choke="0.4126984126984127" color="#dfdfdf" height="1.0" radius="0.0" width="1.0">
+                      <input>
+                        <DropShadow color="#acacac" height="41.15873015873016" offsetY="3.0" radius="20.07936507936508" spread="0.5079365079365079" width="41.15873015873016" />
+                      </input>
+                    </InnerShadow>
+                  </effect>
+                </Rectangle>
+                <HBox id="HBox" alignment="CENTER" prefHeight="100.0" prefWidth="220.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                    <Button fx:id="firstButton" disable="false" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" styleClass="circleButtonLast" text="" visible="false" />
+                    <Button fx:id="prevButton" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" styleClass="circleButtonPrev" text="" />
+                    <Button fx:id="nextButton" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" styleClass="circleButtonNext" text="" />
+                    <Button fx:id="lastButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" styleClass="circleButtonFirst" text="" visible="false" />
+                  </children>
+                </HBox>
+              </children>
+              <HBox.margin>
+                <Insets />
+              </HBox.margin>
+            </AnchorPane>
+            <Button fx:id="repeatButton" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" styleClass="circleButtonRepeat" text="" visible="true" />
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@graphit.css" />
+  </stylesheets>
+</AnchorPane>

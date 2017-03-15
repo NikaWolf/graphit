@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <Line endX="211.0" endY="-120.0" layoutX="289.0" layoutY="188.0" startX="-201.0" startY="119.0" strokeWidth="7.0" styleClass="line" />
+    <Line endX="121.0" endY="-15.0" layoutX="299.0" layoutY="198.0" startX="-214.0" startY="-120.0" strokeWidth="7.0" styleClass="line" />
+    <Line endX="293.0" endY="231.0" layoutX="198.0" layoutY="79.0" startX="302.0" startY="-3.0" strokeWidth="7.0" styleClass="line" />
+    <Line endX="-110.0" endY="229.0" layoutX="601.0" layoutY="87.0" startX="-512.0" startY="218.0" strokeWidth="7.0" styleClass="line" />
+    <Circle fill="DODGERBLUE" layoutX="87.0" layoutY="68.0" radius="40.99995000000126" smooth="true" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+    <Button layoutX="55.0" layoutY="35.0" minHeight="47.0" minWidth="43.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="circleButton" text="4" />
+    <Circle fill="DODGERBLUE" layoutX="416.0" layoutY="183.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+    <Button layoutX="384.0" layoutY="151.0" minHeight="47.0" minWidth="43.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="circleButton" text="5" textFill="BLACK">
+      <font>
+        <Font size="20.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Circle fill="DODGERBLUE" layoutX="87.0" layoutY="307.0" radius="40.99995000000126" smooth="true" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+    <Button layoutX="55.0" layoutY="274.0" minHeight="47.0" minWidth="43.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="circleButton" text="1" />
+    <Circle fill="DODGERBLUE" layoutX="498.0" layoutY="69.0" radius="40.99995000000126" smooth="true" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+    <Button font="$x1" layoutX="466.0" layoutY="36.0" minHeight="47.0" minWidth="43.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="circleButton" text="2" />
+    <Circle fill="DODGERBLUE" layoutX="490.0" layoutY="315.0" radius="40.99995000000126" smooth="true" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="circle" />
+    <Button layoutX="458.0" layoutY="282.0" minHeight="47.0" minWidth="43.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="circleButton" text="3" />
+    <Rectangle arcHeight="46.0" arcWidth="35.0" disable="false" fill="#fffcaf" height="115.0" layoutX="72.0" layoutY="89.0" stroke="#ffca99" strokeLineCap="SQUARE" strokeLineJoin="MITER" strokeType="OUTSIDE" strokeWidth="2.9" width="200.0">
+      <effect>
+        <GaussianBlur radius="1.296052631578946" />
+      </effect>
+    </Rectangle>
+    <TextArea depthTest="INHERIT" editable="true" focusTraversable="true" layoutX="72.0" layoutY="89.0" mouseTransparent="false" pickOnBounds="false" prefHeight="114.89947509765625" prefWidth="200.0" style="-fx-background-color: null;" text="bgrt&#10;" visible="true" wrapText="true" />
+  </children>
+  <stylesheets>
+    <URL value="@fxml_test_circl.css" />
+  </stylesheets>
+</AnchorPane>
